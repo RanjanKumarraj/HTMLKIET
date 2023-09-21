@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>demo</title>
+	<style type="text/css">
+		p{
+			font-size: 25px;
+			color: orangered;
+		}
+		body{
+			background-color: black;
+		}
+	</style>
+</head>
+<body style=" text-align: center;">
+	<h2 style="color: blue;"> Jvascript object model</h2>
+	<h3 style="color: hotpink;">My BIO-DATA</h3>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+	<p id="demo4"></p>
+	<p id="demo5"></p>
+	<p id="demo6"></p>
+	<p id="demo7"></p>
+	
+	<button type="button" onclick="myFunction()">Click</button>
+    <button onclick="window.print()">Print this page</button>
+	<script type="text/javascript">
+		function myFunction(){
+		const person = {
+			firstName:"Ranjan",
+			lastName : "Thakur",
+			collegeName :"KIET 'Gropu of institution (Gaziyabad)'",
+			phNo : 9334513814,
+			id : 5556,
+			age : 21,
+			adress:"Priyadarshani nagar tilkamanjhi 'bhagalpur'(Bihar-812001)",
+			Occu : "Student"
+		}
+		document.getElementById("demo").innerHTML="My Name is_" +person.firstName + "_" ;
+		document.getElementById("demo1").innerHTML= "My last Name is_" +person.lastName + "_";
+		document.getElementById("demo2").innerHTML= "My College Name is_"+person.collegeName + "_";
+		document.getElementById("demo3").innerHTML= "My PHONE-Number Is _" +person.phNo + "_";
+		document.getElementById("demo4").innerHTML="My Id is_" +person.id + "_";
+		document.getElementById("demo5").innerHTML=" My Age is_" +person.age + "_";
+		document.getElementById("demo6").innerHTML=" Adress is_" +person.adress + "_";
+		document.getElementById("demo7").innerHTML= "My Occupation Is_" +person.Occu + "_";
+	}
+
+
+	</script>
+
+</body>
+</html>
